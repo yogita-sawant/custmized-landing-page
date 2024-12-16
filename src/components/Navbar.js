@@ -25,7 +25,7 @@ export default function Navbar() {
       text: "Sign Up",
       icon: "fas fa-user-plus",
       href: "#signup",
-      style: "bg-secondary text-white active:bg-secondary-dark",
+      style: "bg-secondary text-white-light active:bg-secondary-dark",
     },
   ];
 
@@ -34,14 +34,14 @@ export default function Navbar() {
       className={`${
         transparent
           ? "top-0 absolute z-50 w-full"
-          : "relative bg-white shadow-lg"
+          : "relative bg-white-light shadow-lg"
       } flex flex-wrap items-center justify-between px-2 py-3`}
     >
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <a
             className={`${
-              transparent ? "text-white" : "text-gray-800"
+              transparent ? "text-white-light" : "text-gray-light-800"
             } text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase`}
             href={logoLink}
           >
@@ -54,7 +54,7 @@ export default function Navbar() {
           >
             <i
               className={`${
-                transparent ? "text-white" : "text-gray-800"
+                transparent ? "text-white-light" : "text-gray-light-800"
               } fas fa-bars`}
             />
           </button>
@@ -63,7 +63,7 @@ export default function Navbar() {
         <div
           className={`${
             navbarOpen ? "block rounded shadow-lg" : "hidden"
-          } lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none`}
+          } lg:flex flex-grow items-center bg-white-light lg:bg-transparent lg:shadow-none`}
           id="navbar"
         >
           {/* <ul className="flex flex-col lg:flex-row list-none mr-auto">
@@ -72,8 +72,8 @@ export default function Navbar() {
                 <a
                   className={`${
                     transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600"
+                      ? "lg:text-white-light lg:hover:text-gray-light-300 text-gray-light-800"
+                      : "text-gray-light-800 hover:text-gray-light-600"
                   } px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold`}
                   href={link.href}
                 >
@@ -81,8 +81,8 @@ export default function Navbar() {
                     <i
                       className={`${
                         transparent
-                          ? "lg:text-gray-300 text-gray-500"
-                          : "text-gray-500"
+                          ? "lg:text-gray-light-300 text-gray-light-500"
+                          : "text-gray-light-500"
                       } ${link.icon} text-lg leading-lg mr-2`}
                     />
                   )}
@@ -98,16 +98,16 @@ export default function Navbar() {
                 <a
                   className={`${
                     transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
-                      : "text-gray-800 hover:text-gray-600"
+                      ? "lg:text-white-light lg:hover:text-gray-light-300 text-gray-light-800"
+                      : "text-gray-light-800 hover:text-gray-light-600"
                   } px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold`}
                   href={social.href}
                 >
                   <i
                     className={`${
                       transparent
-                        ? "lg:text-gray-300 text-gray-500"
-                        : "text-gray-500"
+                        ? "lg:text-gray-light-300 text-gray-light-500"
+                        : "text-gray-light-500"
                     } ${social.icon} text-lg leading-lg`}
                   />
                   <span className="lg:hidden inline-block ml-2">
@@ -121,7 +121,9 @@ export default function Navbar() {
               <li key={index} className="flex items-center">
                 <a
                   className={`${
-                    transparent ? "text-gray-800 bg-gray-100" : button.style
+                    transparent
+                      ? "text-gray-light-800 bg-gray-light-100"
+                      : button.style
                   } text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3`}
                   href={button.href}
                 >

@@ -14,22 +14,22 @@ export default function ProjectDetails() {
     <>
       <div className="flex flex-wrap items-center mt-32">
         <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-          <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+          <div className="text-gray-light-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-light-100">
             <i className="fas fa-user-friends text-xl"></i>
           </div>
           <h3 className="text-3xl mb-2 font-semibold leading-normal">
             {sectionTitle}
           </h3>
-          <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+          <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-light-700">
             {projectDescription1}
           </p>
-          <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+          <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-light-700">
             {projectDescription2}
           </p>
         </div>
 
         <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+          <div className="relative flex flex-col min-w-0 break-words bg-white-light w-full mb-6 shadow-lg rounded-lg bg-pink-dark-600">
             <img
               alt="..."
               src={imageUrl}
@@ -48,11 +48,13 @@ export default function ProjectDetails() {
               >
                 <polygon
                   points="-30,95 583,95 583,65"
-                  className="text-pink-600 fill-current"
+                  className="text-pink-dark-600 fill-current"
                 ></polygon>
               </svg>
-              <h4 className="text-xl font-bold text-white">{cardTitle}</h4>
-              <p className="text-md font-light mt-2 text-white">
+              <h4 className="text-xl font-bold text-white-light">
+                {cardTitle}
+              </h4>
+              <p className="text-md font-light mt-2 text-white-light">
                 {cardDescription}
               </p>
             </blockquote>

@@ -20,7 +20,7 @@ export default function ProjectFlow() {
           y="0"
         >
           <polygon
-            className="text-white fill-current"
+            className="text-white-light fill-current"
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
@@ -36,11 +36,11 @@ export default function ProjectFlow() {
           </div>
           <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
             <div className="md:pr-12">
-              <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+              <div className="text-pink-dark-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-dark-300">
                 <i className={`fas ${content.icon} text-xl`}></i>
               </div>
               <h3 className="text-3xl font-semibold">{content.title}</h3>
-              <p className="mt-4 text-lg leading-relaxed text-gray-600">
+              <p className="mt-4 text-lg leading-relaxed text-gray-light-600">
                 {content.description}
               </p>
               <ul className="list-none mt-6">
@@ -48,12 +48,12 @@ export default function ProjectFlow() {
                   <li key={index} className="py-2">
                     <div className="flex items-center">
                       <div>
-                        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-dark-200 mr-3">
                           <i className={`fas ${step.icon}`}></i>
                         </span>
                       </div>
                       <div>
-                        <h4 className="text-gray-600">{step.text}</h4>
+                        <h4 className="text-gray-light-600">{step.text}</h4>
                       </div>
                     </div>
                   </li>

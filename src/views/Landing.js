@@ -14,7 +14,7 @@ export default function Landing() {
       <Navbar />
       <main>
         <HeroSection />
-        <section className="pb-20 bg-gray-300 -mt-24">
+        <section className="pb-20 bg-gray-light-300 -mt-24">
           <div className="container mx-auto px-4">
             <ProjectFeatures />
             <ProjectDetails />

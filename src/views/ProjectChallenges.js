@@ -10,7 +10,7 @@ export default function ProjectChallenges() {
         <div className="flex flex-wrap justify-center text-center mb-24">
           <div className="w-full lg:w-6/12 px-4">
             <h2 className="text-4xl font-semibold">{content.title}</h2>
-            <p className="text-lg leading-relaxed m-4 text-gray-600">
+            <p className="text-lg leading-relaxed m-4 text-gray-light-600">
               {content.subtitle}
             </p>
           </div>
@@ -30,7 +30,7 @@ export default function ProjectChallenges() {
                 />
                 <div className="pt-6 text-center">
                   <h5 className="text-xl font-bold">{member.title}</h5>
-                  <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  <p className="mt-1 text-sm text-gray-light-500 uppercase font-semibold">
                     {member.description}
                   </p>
                 </div>
