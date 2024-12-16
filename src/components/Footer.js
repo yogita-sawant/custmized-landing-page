@@ -103,7 +103,7 @@ export default function Footer() {
                 href="https://www.creative-tim.com"
                 className="text-gray-600 hover:text-gray-900"
               >
-                Creative Tim
+                by Tagfi
               </a>
             </div>
           </div>
